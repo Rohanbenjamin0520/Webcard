@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.input {
+    @apply w-full border border-gray-300 rounded-xl
+    px-5 py-3 text-base
+    focus:ring-2 focus:ring-indigo-500
+    outline-none transition bg-white;
+  }
+  
+  /* Popup animation */
+  @keyframes slideIn {
+    from {
+      opacity: 0;
+      transform: translateY(-16px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .animate-slideIn {
+    animation: slideIn 0.35s ease-out;
+  }
+  
+  
